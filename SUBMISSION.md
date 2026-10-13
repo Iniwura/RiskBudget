@@ -35,11 +35,11 @@ execution_status: FINISHED_WITH_RETURN
 source_readback: genlayer code + gen_getContractCode
 source_sha_match: TRUE
 github: https://github.com/Iniwura/RiskBudget
-commit: PENDING
-pushed: PENDING
-secret_scan: PENDING
+commit: 0a197eb
+pushed: TRUE
+secret_scan: PASS
 live_smoke: PASS
-ready_for_submission: PENDING
+ready_for_submission: TRUE
 ```
 
 Explorer: https://explorer-studio.genlayer.com/address/0x0492f53482231327366312C9A7C38e058Cc20BBB
