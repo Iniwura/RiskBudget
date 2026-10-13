@@ -1,0 +1,174 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "authorize_action": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "action_id",
+          "string"
+        ],
+        [
+          "action_packet",
+          {
+            "$dict": "any"
+          }
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "close_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "create_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "agent",
+          "address"
+        ],
+        [
+          "quantified_resource_unit",
+          "string"
+        ],
+        [
+          "max_quantified_exposure",
+          "int"
+        ],
+        [
+          "max_total_risk_units",
+          "int"
+        ],
+        [
+          "max_data_units",
+          "int"
+        ],
+        [
+          "max_external_units",
+          "int"
+        ],
+        [
+          "max_privilege_units",
+          "int"
+        ],
+        [
+          "max_irreversibility_units",
+          "int"
+        ],
+        [
+          "max_blast_radius_units",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_action": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "action_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_action_fingerprint": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ],
+        [
+          "action_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_policy": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "any"
+      }
+    },
+    "get_policy_action_ids": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": [
+        {
+          "$rep": "string"
+        }
+      ]
+    },
+    "get_policy_fingerprint": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_remaining_budget": {
+      "params": [
+        [
+          "policy_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": {
+        "$dict": "int"
+      }
+    }
+  }
+}
