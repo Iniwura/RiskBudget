@@ -719,3 +719,4 @@ class RiskBudget(gl.contract.Contract):
     def get_policy_action_ids(self, policy_id: str) -> list[str]:
         policy = self._policy(_identifier(policy_id, "policy_id"))
         return self._action_ids(policy)
+
